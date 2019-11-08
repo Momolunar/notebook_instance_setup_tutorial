@@ -5,4 +5,4 @@ The GCP notebook instance is currently running Debian GNU/Linux 9.11 (stretch) a
 
 1. Update repositories and packages
 
-'''sudo apt-get upgrade'''
+```sudo apt-get upgrade```
