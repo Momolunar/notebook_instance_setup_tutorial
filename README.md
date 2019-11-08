@@ -1,7 +1,8 @@
 # Notebook Instance Setup Tutorial
-How to setup the GCP instance notebook with python3.6
 
-The GCP notebook instance is currently running Debian GNU/Linux 9.11 (stretch) and comes with Python 2.7 and Python 3.5. The following instruction will help you install Python 3.6 and its kernel so you can change between python versions in your notebook.
+## How to setup the GCP instance notebook with python3.6
+
+## The GCP notebook instance is currently running Debian GNU/Linux 9.11 (stretch) and comes with Python 2.7 and Python 3.5. The following instruction will help you install Python 3.6 and its kernel so you can change between python versions in your notebook.
 
 1. Update repositories and packages
 
@@ -27,15 +28,15 @@ The GCP notebook instance is currently running Debian GNU/Linux 9.11 (stretch) a
 
 ```wget https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tgz```
 
-- Extract compressed file:
+* Extract compressed file:
 
 ```tar xvf Python-3.6.4.tgz```
 
-Change into python3.6.4 directory :
+* Change into python3.6.4 directory :
 
 ```cd Python-3.6.4```
 
-Configure, make and install :
+* Configure, make and install :
 
 ```./configure --enable-optimizations```
 ```sudo make-j8```
@@ -43,19 +44,19 @@ Configure, make and install :
 
 4. Jupyter Kernel
 
-Check which kernels are currently installed:
+* Check which kernels are currently installed:
 
 ```jupyter kernelspec list```
 
-Upgrade pip3.6 to the latest version and install ipykernel:
+* Upgrade pip3.6 to the latest version and install ipykernel:
 
 ```sudo pip3.6 install --upgrade pip```
 ```sudo pip3.6 install ipykernel```
 
-Let --name equal the name you want for your kernel
+* Let --name equal the name you want for your kernel
 
 ```sudo python3.6 -m ipykernel install --user --name=Python3.6```
 
-Running jupyter kernelspec list should display your new kernel.
-![Alt text](/images/kernelsnip.PNG?raw=true "Kernelspec output")
+* Running jupyter kernelspec list should display your new kernel.
 
+![Alt text](/images/kernelsnip.PNG?raw=true "Kernelspec output")
